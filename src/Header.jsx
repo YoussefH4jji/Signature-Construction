@@ -13,7 +13,7 @@ export default function Header(){
                         <a href="#about"><li className="header-list">About us</li></a>
                         <a href="#services"><li className="header-list">Services</li></a>
                         <a href="#projects"><li className="header-list">Projects</li></a>
-                        <a href="#contact"><li className="header-list">Contact Me</li></a>
+                        <a href="#contact"><li className="header-list">Contact Us</li></a>
                     </ul>
                 </nav>
             </header>
