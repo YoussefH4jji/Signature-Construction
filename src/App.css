@@ -454,7 +454,9 @@ footer{
   html{
     font-size: 35%;
   }
-
+  .e-card{
+    margin-top: 15rem;
+  }
 }
 @media (max-width :343px) {
 
@@ -486,5 +488,65 @@ footer{
   
   .home-container{
     height: 40rem;
+  }
+  .e-card{
+    margin-top: 10rem;
+  }
+}
+@media (max-width :200px) {
+
+  html{
+    font-size: 15%;
+  }
+  
+  .home-container{
+    height: 40rem;
+  }
+  .e-card{
+    /* gap: 2rem; */
+    margin-top: 10rem;
+    /* border: 1px solid red; */
+  }
+  
+  .btn{
+    padding: 1rem 5rem;
+  }
+}
+@media (max-width :150px) {
+
+  html{
+    font-size: 10%;
+  }
+  
+  .home-container{
+    height: 40rem;
+  }
+  .home-buttons button{
+    height: 10px;
+    width: 5px;
+  }
+  .e-card{
+    /* gap: 2rem; */
+    margin-top: 10rem;
+    /* border: 1px solid red; */
+  }
+  .btn{
+    padding: 1rem 3rem;
+  }
+}
+@media (max-width :100px){
+  html{
+    font-size: 5%;
+  }
+  .btn{
+    padding: 1rem 5rem;
+  }
+}
+@media (max-width :70px){
+  html{
+    font-size: 3%;
+  }
+  .btn{
+    padding: 0.5rem 3rem;
   }
 }
