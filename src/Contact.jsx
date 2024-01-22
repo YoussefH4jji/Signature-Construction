@@ -67,26 +67,26 @@ export default function Contact() {
             <form>
                 <div className="input-box">
                     <div className="input-field">
-                        <input type="text" placeholder="Full Name" id='name' className="input" />
+                        <input type="text" placeholder="Full Name" id='name' className="input" required/>
                         <span className="focus"></span>
                     </div>
                     <div className="input-field">
-                        <input type="text" placeholder="Email Address" id='email' className="input" />
+                        <input type="text" placeholder="Email Address" id='email' className="input" required/>
                         <span className="focus"></span>
                     </div>
                 </div>
                 <div className="input-box">
                     <div className="input-field">
-                        <input type="number" placeholder="Mobile Number" id='phone' className="input" />
+                        <input type="number" placeholder="Mobile Number" id='phone' className="input" required/>
                         <span className="focus"></span>
                     </div>
                     <div className="input-field">
-                        <input type="text" placeholder="Email Subject" id='subject' className="input" />
+                        <input type="text" placeholder="Email Subject" id='subject' className="input"required />
                         <span className="focus"></span>
                     </div>
                 </div>
                 <div className="textarea-field">
-                    <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" className="input text-field"></textarea>
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" className="input text-field" required></textarea>
                 </div>
                 <div className="btn-box">
                     <button type="submit" className="btn submit">Submit</button>
