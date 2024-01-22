@@ -441,6 +441,9 @@ footer{
   html{
     font-size: 55%;
   }
+  /* body{
+    padding: 0.3rem;
+  } */
 }
 @media (max-width :535px) {
 
