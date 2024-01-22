@@ -1,10 +1,11 @@
 // import {  Link,NavLink } from 'react-router-dom'
 // import companyLogo from '/images/white.JPG'
+import companyLogo from '../public/images/white.png'
 export default function Header(){
     return(
         <section className="header-section">
             <header className="header">
-                <img src="/public/images/white.png" alt=" logo image" className="header-logo" />
+                <img src={companyLogo} alt=" logo image" className="header-logo" />
                 <img src="/images/dylan-gillis-KdeqA3aTnBY-unsplash.jpg" alt="unsplash-img" />
                 <nav className="header-nav">
                     <ul className="header-pages">
