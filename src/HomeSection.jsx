@@ -9,7 +9,9 @@ export default function HomeSection(){
                     and a passion for precision, 
                     we bring your vision to life. 
                 </p>
-                <button className="btn learn">Learn More</button>
+                <div className="home-buttons">
+                    <a href="#contact"><button className="btn contact">Contact us</button></a>
+                </div>
             </div>
         </section>
     )
