@@ -8,6 +8,7 @@ function App() {
   return (
     <>
       <h1>This is the APP Component</h1>
+      <img src="../images/black logo.JPG" alt="" />
     </>
   )
 }
