@@ -1,15 +1,29 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
+import Header from './Header'
+// import {Home} from './Home'
+// import Home from './Home'
+import HomeSection from './HomeSection'
+import About from './About'
+import Services from './Services'
+import Projects from './Projects'
+import Contact from './Contact'
+import Footer from './Footer'
 import './App.css'
 
 function App() {
-
   return (
     <>
-      <h1>This is the APP Component</h1>
-      <img src="../images/black logo.JPG" alt="" />
+      <Header/>
+      <HomeSection/>
+      <About/>
+      <Services/>
+      <Projects/>
+      <Contact/>
+      <Footer/>
     </>
+      
   )
 }
 
