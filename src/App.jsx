@@ -8,7 +8,7 @@ import HomeSection from './HomeSection'
 import About from './About'
 import Services from './Services'
 import Projects from './Projects'
-// import Contact from './Contact'
+import Contact from './Contact'
 // import Footer from './Footer'
 import './App.css'
 
@@ -20,7 +20,7 @@ function App() {
       <About/>
       <Services/>
       <Projects/>
-      {/* <Contact/> */}
+      <Contact/>
       {/* <Footer/> */}
     </>
       
