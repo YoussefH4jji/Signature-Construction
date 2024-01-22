@@ -7,7 +7,7 @@ import Header from './Header'
 import HomeSection from './HomeSection'
 import About from './About'
 import Services from './Services'
-// import Projects from './Projects'
+import Projects from './Projects'
 // import Contact from './Contact'
 // import Footer from './Footer'
 import './App.css'
@@ -19,7 +19,7 @@ function App() {
       <HomeSection/>
       <About/>
       <Services/>
-      {/* <Projects/> */}
+      <Projects/>
       {/* <Contact/> */}
       {/* <Footer/> */}
     </>
