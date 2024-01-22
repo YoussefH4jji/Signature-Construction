@@ -5,7 +5,7 @@ import Header from './Header'
 // import {Home} from './Home'
 // import Home from './Home'
 import HomeSection from './HomeSection'
-// import About from './About'
+import About from './About'
 // import Services from './Services'
 // import Projects from './Projects'
 // import Contact from './Contact'
@@ -17,7 +17,7 @@ function App() {
     <>
       <Header/>
       <HomeSection/>
-      {/* <About/> */}
+      <About/>
       {/* <Services/> */}
       {/* <Projects/> */}
       {/* <Contact/> */}
