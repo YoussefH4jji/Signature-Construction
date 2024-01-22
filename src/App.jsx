@@ -5,11 +5,11 @@ import Header from './Header'
 // import {Home} from './Home'
 // import Home from './Home'
 import HomeSection from './HomeSection'
-import About from './About'
-import Services from './Services'
-import Projects from './Projects'
-import Contact from './Contact'
-import Footer from './Footer'
+// import About from './About'
+// import Services from './Services'
+// import Projects from './Projects'
+// import Contact from './Contact'
+// import Footer from './Footer'
 import './App.css'
 
 function App() {
@@ -17,11 +17,11 @@ function App() {
     <>
       <Header/>
       <HomeSection/>
-      <About/>
-      <Services/>
-      <Projects/>
-      <Contact/>
-      <Footer/>
+      {/* <About/> */}
+      {/* <Services/> */}
+      {/* <Projects/> */}
+      {/* <Contact/> */}
+      {/* <Footer/> */}
     </>
       
   )
