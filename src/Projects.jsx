@@ -34,7 +34,7 @@ export default function Projects(){
 
     return (
         <section className="projects-section" id="projects">
-            <h1 className="title">Our Latest <span className="orange"></span></h1>
+            <h1 className="title">Our Latest <span className="orange">Projects</span></h1>
             <div className="container">
                 <div className="slider-wrapper">
                     <CiCircleChevLeft id="prev-slide" className="prev-btn slider-btn"/>
