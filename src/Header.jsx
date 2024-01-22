@@ -4,7 +4,8 @@ export default function Header(){
     return(
         <section className="header-section">
             <header className="header">
-                <img src="images/white.png" alt=" logo image" className="header-logo" />
+                <img src="/images/white.png" alt=" logo image" className="header-logo" />
+                <img src="/images/dylan-gillis-KdeqA3aTnBY-unsplash.jpg" alt="unsplash-img" />
                 <nav className="header-nav">
                     <ul className="header-pages">
                         <a href="#home"><li className="header-list">Home</li></a>
