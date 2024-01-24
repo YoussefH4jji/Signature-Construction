@@ -312,7 +312,8 @@ form{
   padding: 1rem;
 
   border: 2px solid #ccc;
-  border-radius: .6rem;
+  /* border-radius: .6rem; */
+  border-top-left-radius: 3rem;
   margin-bottom: .6rem;
   color: white;
 
@@ -342,7 +343,7 @@ form{
   height: 100%;
   padding: 1.5rem;
 
-  border-radius: .6rem;
+  border-radius: .9rem;
   resize: none;
   margin-top: 0.5rem;
   
