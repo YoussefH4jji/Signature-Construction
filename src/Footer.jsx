@@ -31,7 +31,7 @@ export default function Footer(){
                     </div>
                     <div className="contact-links">
                        <CiPhone className="contact-icon"/>
-                        <a href="">0612345678</a>
+                        <a href="">0662213065</a>
 
                     </div>
                     <div className="contact-links">
