@@ -9,6 +9,30 @@ export default function Projects(){
 
         const imageList = document.querySelector('.slider-wrapper .image-list')
         const maxScroll = imageList.scrollWidth - imageList.clientWidth
+
+        scrollBarThumb.addEventListener("mousedown", (e)=>{
+            const startX = e.clientX
+            const thumbPosition = scrollBarThumb.offsetLeft;
+
+            const handleMouseMove = (e) =>{
+                const deltaX = e.clientX - startX
+                const newThumbPosition = thumbPosition + deltaX
+                const maxThumbPosition = slideScrollBar.getBoundingClientRect().width - scrollBarThumb.offsetWidth
+
+                const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition))
+
+                const scrollPosition = (boundedPosition / maxThumbPosition) * maxScroll
+                imageList.scrollLeft = scrollPosition
+                scrollBarThumb.style.left = `${boundedPosition}px`
+            }
+            const handleMouseUp = ()=>{
+                document.removeEventListener("mousemove", handleMouseMove)
+                document.removeEventListener("mouseup", handleMouseUp)
+            }
+            document.addEventListener("mousemove", handleMouseMove)
+            document.addEventListener("mouseup", handleMouseUp)
+
+        })
         slideButtons.forEach(button =>{
             button.addEventListener('click',()=>{
                 const direction = button.id === 'prev-slide' ? -1 : 1

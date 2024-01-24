@@ -362,49 +362,54 @@ footer{
   background-color: #F5B06A;
   color: white;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 1rem;
-  
 }
+
 .footer-container{
   display: flex;
-
   justify-content: space-around;
   margin-left: 2rem;
   background-color: #F48B21;
   margin: 0;
   margin-top: 2rem;
   color: white;
+  font-size: .5rem;
+
 }
 .company-logo img{
-  width: 15rem;
+  width: 10rem;
 }
 .links-container{
   margin-left: 2rem;
+  /* border: 1px solid red; */
 
   margin-right: 2rem;
 
 }
 .links-container h3{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .links-container p{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: white;
 }
 .contact-container{
   display: flex;
   flex-direction: column;
   margin-left: 0;
+  margin-right: 0;
+  /* border: 1px solid red; */
 
 }
 .contact-container h3{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .contact-container a{
   margin-bottom: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: white;
+
 }
 .contact-links{
   display: flex;
@@ -414,7 +419,7 @@ footer{
   font-size: 1.4rem;
 }
 .location-container h3{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .location-container{
   display: flex;
@@ -422,9 +427,12 @@ footer{
   justify-content: start;
   align-items: start;
   width: 15rem;
+  margin-left: 0;
+  /* border: 1px solid red; */
+
 }
 .location-container p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 @media (max-width :1260px) {
 
