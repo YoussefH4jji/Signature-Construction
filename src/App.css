@@ -464,12 +464,7 @@ footer{
   html{
     font-size: 80%;
   }
-
-  
-  .e-card:nth-child(3){
-    margin-left: 20rem;
-    margin-right: -10rem;
-  }
+ 
 }
 @media (max-width :995px){
   .e-card:nth-child(3){
@@ -477,7 +472,26 @@ footer{
     margin-right: -10rem;
   }
 }
+  
+@media (max-width :780px) {
 
+  html{
+    font-size: 55%;
+  }
+  /* body{
+    padding: 0.3rem;
+  } */
+  .e-card:nth-child(3){
+    margin-left: 1rem;
+    margin-right: -1rem;
+  }
+}
+@media (max-width :630px){
+  .e-card:nth-child(3){
+    margin-left: 20rem;
+    margin-right: -10rem;
+  }
+}
 @media (max-width :535px) {
 
   html{
