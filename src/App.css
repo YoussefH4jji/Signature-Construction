@@ -12,10 +12,10 @@ body{
   
 }
 header{
-  display: flex;
+  /* display: flex; */
   /* margin: 0 3rem 0; */
-  align-items: center;
-  justify-content: space-between;
+  /* align-items: center; */
+  /* justify-content: space-between; */
   margin-bottom: 0;
   position: fixed;
   background-color: white;
@@ -41,13 +41,33 @@ a:hover{
   text-decoration: underline;
 }
 .header-pages{
-  display: flex;
-  margin-right: 2rem;
+  margin-left: auto;
 }
 
+.navbar-collapse a{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-left: 2rem;
+}
+.navbar-toggler{
+  border: none;
+}
+.navbar-toggler-icon{
+  border: none;
+}
 .header-list{
   margin-right: 2rem;
   font-size: 1.5rem;
+}
+/* style.css */
+
+.navbar-nav .navbar-item .nav-link {
+  color:  black;
+}
+
+.navbar-nav .navbar-item .nav-link:hover {
+  color: #F48B21;
 }
 
 .home-container{
@@ -312,6 +332,7 @@ form{
 
   height: auto;
   padding: 1rem;
+  padding-left: 3rem;
 
   border: 2px solid #ccc;
   /* border-radius: .6rem; */
@@ -351,6 +372,7 @@ form{
   /* border-radius: .9rem; */
   resize: none;
   margin-top: 0.5rem;
+  padding-left: 3rem;
   
 
 }
@@ -413,7 +435,6 @@ footer{
   margin-bottom: 1rem;
   font-size: 1.2rem;
   color: white;
-
 }
 .contact-links{
   display: flex;
@@ -444,10 +465,7 @@ footer{
     font-size: 80%;
   }
 
-  .card{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-  }
+  
   .e-card:nth-child(3){
     margin-left: 20rem;
     margin-right: -10rem;
@@ -512,6 +530,10 @@ footer{
   .e-card{
     margin-top: 10rem;
   }
+  
+  .input,.textarea-field textarea{
+    padding-left: 5rem;
+  }
 }
 @media (max-width :200px) {
 
@@ -531,6 +553,13 @@ footer{
   .btn{
     padding: 1rem 5rem;
   }
+  .input,.textarea-field textarea{
+    padding-left: 7rem;
+  }
+  .textarea-field textarea{
+    width: 59rem;
+  }
+  
 }
 @media (max-width :150px) {
 

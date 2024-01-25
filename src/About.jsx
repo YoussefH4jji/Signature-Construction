@@ -13,7 +13,7 @@ export default function About(){
                     </p>
                     <button className="btn services">Check Our Services</button>
                 </div>
-                <img src="../images/workers.jpg" alt="workers image" />
+                <img src="../images/workers.jpg" alt="workers image"className="img-responsive" />
             </div>
         </section>
     )
