@@ -44,7 +44,7 @@ export default function Footer(){
                     <p>Rond point, Banque populaire, Av. Arabie Saoudite, Tangier</p>
                 </div>
             </div>
-            <footer>Copyright 2024 All rights are reserverd</footer>
+            <footer>©  2024 Signature Construction - All Rights Reserved.</footer>
         </section>
     )
 }

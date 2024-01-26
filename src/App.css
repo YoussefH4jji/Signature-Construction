@@ -427,9 +427,9 @@ footer{
 }
 .links-container{
   margin-left: 2rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* width: auto; */
-  width: 15rem;
+  width: 10rem;
   margin-right: 2rem;
 
 }
