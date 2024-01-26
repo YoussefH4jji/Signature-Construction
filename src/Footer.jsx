@@ -12,7 +12,7 @@ export default function Footer(){
                 </div>
                 <div className="links-container">
                     <h3>Go Back To:</h3>
-                    <a href="#home"><p>Home</p></a>
+                    {/* <a href="#home"><p>Home</p></a> */}
                     <a href="#about"><p>About Us</p></a>
                     <a href="#services"><p>Services</p></a>
                     <a href="#projects"><p>Projects</p></a>

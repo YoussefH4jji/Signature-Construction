@@ -14,9 +14,9 @@ export default function Header(){
                     </button>
                     <div className="collapse navbar-collapse" id="navbarCollapse">
                         <ul className="navbar-nav header-pages ">
-                            <li className="navbar-item">
+                            {/* <li className="navbar-item">
                                 <a href="#home" className="nav-link header-list">Home</a>
-                            </li>
+                            </li> */}
                             <li className="navbar-item">
                                 <a href="#about" className="nav-link header-list">About Us</a>
                             </li>
