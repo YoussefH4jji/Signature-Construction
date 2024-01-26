@@ -52,35 +52,36 @@ export default function Contact() {
 
     return (
         <section className="contact-section" id='contact'>
-            <h1 className="title">Contact <span className="orange">Us</span></h1>
-            <form>
-                <div className="input-box">
-                    <div className="input-field">
-                        <input type="text" placeholder="Full Name" id='name' className="input" required/>
-                        <span className="focus"></span>
-                    </div>
-                    <div className="input-field">
-                        <input type="text" placeholder="Email Address" id='email' className="input" required/>
-                        <span className="focus"></span>
-                    </div>
-                </div>
-                <div className="input-box">
-                    <div className="input-field">
-                        <input type="number" placeholder="Mobile Number" id='phone' className="input" required/>
-                        <span className="focus"></span>
-                    </div>
-                    <div className="input-field">
-                        <input type="text" placeholder="Email Subject" id='subject' className="input"required />
-                        <span className="focus"></span>
-                    </div>
-                </div>
-                <div className="textarea-field">
-                    <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" className="input text-field" required></textarea>
-                </div>
-                <div className="btn-box">
-                    <button type="submit" className="button submit">Submit</button>
-                </div>
-            </form>
-        </section>
+    <h1 className="title">Contact <span className="orange">Us</span></h1>
+    <form className="container">
+        <div className="input-box">
+            <div className="input-field">
+                <input type="text" placeholder="Full Name" id='name' className="input" />
+                <span className="focus"></span>
+            </div>
+            <div className="input-field">
+                <input type="text" placeholder="Email Address" id='email' className="input" />
+                <span className="focus"></span>
+            </div>
+        </div>
+        <div className="input-box">
+            <div className="input-field">
+                <input type="number" placeholder="Mobile Number" id='phone' className="input" />
+                <span className="focus"></span>
+            </div>
+            <div className="input-field">
+                <input type="text" placeholder="Email Subject" id='subject' className="input" />
+                <span className="focus"></span>
+            </div>
+        </div>
+        <div className="textarea-field">
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" className="input text-field"></textarea>
+        </div>
+        <div className="btn-box">
+            <button type="submit" className="btn button submit">Submit</button>
+        </div>
+    </form>
+</section>
+
     );
 }
