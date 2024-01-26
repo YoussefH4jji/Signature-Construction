@@ -48,18 +48,7 @@ export default function Contact() {
             sendEmail();
         };
         formData.addEventListener('submit', handleSubmit);
-
-        // if (formData) {
-        //     formData.addEventListener('submit', handleSubmit);
-        // }
-
-        // // Cleanup function to remove the event listener when the component unmounts
-        // return () => {
-        //     if (formData) {
-        //         formData.removeEventListener('submit', handleSubmit);
-        //     }
-        // };
-    }, []); // The empty dependency array ensures this effect runs only once when the component mounts
+    }, []); 
 
     return (
         <section className="contact-section" id='contact'>
@@ -89,7 +78,7 @@ export default function Contact() {
                     <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" className="input text-field" required></textarea>
                 </div>
                 <div className="btn-box">
-                    <button type="submit" className="btn submit">Submit</button>
+                    <button type="submit" className="button submit">Submit</button>
                 </div>
             </form>
         </section>

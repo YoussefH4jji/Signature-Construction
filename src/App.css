@@ -9,6 +9,7 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding: 0;
   
 }
 header{
@@ -19,7 +20,6 @@ header{
   margin-bottom: 0;
   position: fixed;
   background-color: white;
-  height: auto;
   width: 100%;  
   z-index: 1;
 }
@@ -43,7 +43,6 @@ a:hover{
 .header-pages{
   margin-left: auto;
 }
-
 .navbar-collapse a{
   display: flex;
   /* justify-content: center; */
@@ -52,6 +51,7 @@ a:hover{
 }
 .navbar-toggler{
   border: none;
+  margin-right: 2rem;
 }
 .navbar-toggler-icon{
   border: none;
@@ -70,14 +70,13 @@ a:hover{
   color: #F48B21;
 }
 
-.home-container{
+
+/* Update CSS to adjust styles based on Bootstrap classes */
+.home-container {
   background-image: url('../images/home\ 2.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-background-size: cover; 
-  -moz-background-size: cover;    
-  -o-background-size: cover;  
   height: 30rem;
   position: relative;
   display: flex;
@@ -85,9 +84,9 @@ a:hover{
   align-items: center;
   justify-content: center;
   margin-top: 11rem;
-  
 }
-.home-container::before{
+
+.home-container::before {
   content: '';
   top: 0;
   left: 0;
@@ -97,6 +96,7 @@ a:hover{
   opacity: .5;
   position: absolute;
 }
+
 .home-container h1 {
   text-align: center;
   color: #F48B21;
@@ -105,29 +105,30 @@ a:hover{
   padding-top: 3rem;
   margin-top: 0;
   font-family: 'Lexend Zetta', sans-serif;
-
 }
-.home-section{
+
+.home-section {
   margin-top: -1rem;
 }
-.home-container p{
+
+.home-container p {
   position: relative;
   text-align: center;
   color: white;
   font-size: 2.2rem;
   letter-spacing: .5rem;
   font-family: 'Arimo', sans-serif;
-
 }
-.home-container span{
+
+.home-container span {
   color: transparent;
   -webkit-text-stroke: .1px #F48B21;
 }
-.btn {
+
+.button {
   cursor: pointer;
   position: relative;
   padding: 10px 24px;
-  /* font-size: 18px; */
   color: rgb(193, 163, 98);
   border: 2px solid rgb(193, 163, 98);
   border-radius: 34px;
@@ -138,7 +139,7 @@ a:hover{
   font-size: 1.6rem;
 }
 
-.btn::before {
+.button::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -152,65 +153,78 @@ a:hover{
   transition: all 1s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-.btn:hover::before {
+.button:hover::before {
   scale: 3;
 }
 
-.btn:hover {
+.button:hover {
   color: #212121;
   scale: 1.1;
   box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
 }
 
-.btn:active {
+.button:active {
   scale: 1;
 }
-.about-section{
+
+.about-section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.title{
+
+.title {
   font-size: 2.2rem;
   font-family: 'Lexend Zetta', sans-serif;
+  margin-top: 1.5rem;
 
 }
-.about-container{
+
+.about-container {
   display: flex;
   align-items: center;
-}
-.about-container img{
-  width: 20rem;
-}
-.about-container p{
-  width: 40rem;
+  max-width: 800px;
+  margin-top: 2rem;
 }
 
-.about-desc h3{
+.smaller-img {
+  width: 20rem;
+}
+
+.about-desc {
+  flex: 1;
+}
+
+.about-desc h3 {
   font-size: 1.6rem;
   text-align: center;
   font-family: 'Arimo', sans-serif;
-} 
-.about-desc p{
+}
+
+.about-desc p {
   font-size: 1.4rem;
   letter-spacing: .1rem;
   line-height: 1.7rem;
   font-family: 'Arimo', sans-serif;
 }
+
 .orange{
   color: #F48B21;
 }
+
 
 .projects-section{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  /* margin-left: 12rem;
+  margin-right: 12rem; */
   margin-left: 1rem;
 }
 .projects-section h1{
   text-align: center;
+  margin-bottom: 1rem;
 }
 .container{
   max-width: 1200px;
@@ -228,6 +242,7 @@ a:hover{
   font-weight: bold;
   background-color: #F5B06A;
   cursor: pointer;
+  /* outline: none; */
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -241,7 +256,7 @@ a:hover{
   color: white;
   font-weight: bold;
   background-color: #F5B06A;
-
+  /* font-size: rem; */
   cursor: pointer;
   right: 0;
   border-radius: 50%;
@@ -249,7 +264,7 @@ a:hover{
 }
 .next-btn:hover{
   background-color: #F48B21;
-
+  /* font-size: 2.5rem; */
 }
 .prev-btn:hover{
   background-color: #F48B21;
@@ -317,31 +332,33 @@ a:hover{
   justify-content: center;
   align-items: center;
 }
+.contact-section .title{
+  margin-bottom: 1rem;
+}
 form{
   display: flex;
   flex-direction: column;
-
+  /* justify-content: center; */
+  /* align-items: center; */
   text-align: center;
   width: 50rem;
 
-
+  /* border: 1px solid red; */
 }
 
 .input {
   background-color: #212121;
-
+  /* max-width: 190px; */
   height: auto;
   padding: 1rem;
-  padding-left: 3rem;
-
+  /* text-align: center; */
   border: 2px solid #ccc;
   /* border-radius: .6rem; */
-  /* border-top-left-radius: 3rem; */
   border-bottom-right-radius: 30px;
   border-top-left-radius: 30px;
   margin-bottom: .6rem;
   color: white;
-
+  /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
   font-size: 1.6rem;
 
 }
@@ -367,14 +384,14 @@ form{
   width: 100%;
   height: 100%;
   padding: 1.5rem;
-  border-bottom-right-radius: 30px;
-  border-top-left-radius: 30px;
-  /* border-radius: .9rem; */
+  /* font-size: 1.5rem; */
+  /* color: var(--text-color); */
+  /* background: transparent; */
+ 
   resize: none;
   margin-top: 0.5rem;
-  padding-left: 3rem;
   
-
+  /* border: .2rem solid var(--main-color); */
 }
 
 footer{
@@ -388,8 +405,8 @@ footer{
   font-weight: bold;
   font-size: 1.1rem;
   padding: 1rem;
+  
 }
-
 .footer-container{
   display: flex;
   justify-content: space-around;
@@ -460,68 +477,47 @@ footer{
   font-size: 1.2rem;
 }
 @media (max-width :1260px) {
-
+  
   html{
     font-size: 80%;
   }
- 
 }
-@media (max-width :995px){
-  .e-card:nth-child(3){
-    margin-left: 20rem;
-    margin-right: -10rem;
-  }
-}
-  
+
 @media (max-width :780px) {
 
   html{
     font-size: 55%;
   }
-  /* body{
-    padding: 0.3rem;
-  } */
-  .e-card:nth-child(3){
-    margin-left: 1rem;
-    margin-right: -1rem;
-  }
-}
-@media (max-width :630px){
-  .e-card:nth-child(3){
-    margin-left: 20rem;
-    margin-right: -10rem;
-  }
 }
 @media (max-width :535px) {
-
+ 
   html{
     font-size: 45%;
   }
+
   
 }
 @media (max-width :440px) {
-
   html{
     font-size: 35%;
   }
-  .e-card{
-    margin-top: 15rem;
-  }
+
 }
 @media (max-width :343px) {
-
+ 
   html{
     font-size: 30%;
   }
-  
 }
 @media (max-width :300px) {
 
   html{
     font-size: 29%;
   }
+
 }
 @media (max-width :280px) {
+
   html{
     font-size: 27%;
   }
@@ -538,76 +534,5 @@ footer{
   
   .home-container{
     height: 40rem;
-  }
-  .e-card{
-    margin-top: 10rem;
-  }
-  
-  .input,.textarea-field textarea{
-    padding-left: 5rem;
-  }
-}
-@media (max-width :200px) {
-
-  html{
-    font-size: 15%;
-  }
-  
-  .home-container{
-    height: 40rem;
-  }
-  .e-card{
-    /* gap: 2rem; */
-    margin-top: 10rem;
-    /* border: 1px solid red; */
-  }
-  
-  .btn{
-    padding: 1rem 5rem;
-  }
-  .input,.textarea-field textarea{
-    padding-left: 7rem;
-  }
-  .textarea-field textarea{
-    width: 60rem;
-  }
-  
-}
-@media (max-width :150px) {
-
-  html{
-    font-size: 10%;
-  }
-  
-  .home-container{
-    height: 40rem;
-  }
-  .home-buttons button{
-    height: 10px;
-    width: 5px;
-  }
-  .e-card{
-    /* gap: 2rem; */
-    margin-top: 10rem;
-    /* border: 1px solid red; */
-  }
-  .btn{
-    padding: 1rem 3rem;
-  }
-}
-@media (max-width :100px){
-  html{
-    font-size: 5%;
-  }
-  .btn{
-    padding: 1rem 5rem;
-  }
-}
-@media (max-width :70px){
-  html{
-    font-size: 3%;
-  }
-  .btn{
-    padding: 0.5rem 3rem;
   }
 }
