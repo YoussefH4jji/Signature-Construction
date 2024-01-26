@@ -52,6 +52,7 @@ a:hover{
 .navbar-toggler{
   border: none;
   margin-right: 2rem;
+  font-size: 2rem;
 }
 .navbar-toggler-icon{
   border: none;
