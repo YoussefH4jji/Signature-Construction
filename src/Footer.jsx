@@ -8,7 +8,7 @@ export default function Footer(){
         <section className="footer-section">
             <div className="footer-container">
                 <div className="company-logo">
-                    <img src="../public/images/white transparent.png" alt="Company'slogo" />
+                    <img src="../images/white transparent.png" alt="Company'slogo" />
                 </div>
                 <div className="links-container">
                     <h3>Go Back To:</h3>
