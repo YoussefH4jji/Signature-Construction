@@ -18,7 +18,7 @@ export default function Header(){
                             </li> */}
                             
                             <li className="navbar-item">
-                                <a href="#about" className="nav-link header-list">About Me</a>
+                                <a href="#about" className="nav-link header-list">Not About Me</a>
                             </li>
                             <li className="navbar-item">
                                 <a href="#services" className="nav-link header-list">Services</a>
