@@ -1,7 +1,6 @@
 // import {  Link,NavLink } from 'react-router-dom'
 // import companyLogo from '/images/white.JPG'
 import companyLogo from '../public/images/logoPng.png'
-import './Header.css'
 export default function Header(){
     return(
         <section className="header-section">
@@ -17,6 +16,7 @@ export default function Header(){
                             {/* <li className="navbar-item">
                                 <a href="#home" className="nav-link header-list">Home</a>
                             </li> */}
+                            
                             <li className="navbar-item">
                                 <a href="#about" className="nav-link header-list">About Us</a>
                             </li>
@@ -28,6 +28,9 @@ export default function Header(){
                             </li>
                             <li className="navbar-item header-list">
                                 <a href="#contact" className="nav-link">Contact</a>
+                            </li>
+                            <li>
+                                <div id="google_translate_element"className="navbar-item header-list"></div>
                             </li>
                         </ul>
                     </div>

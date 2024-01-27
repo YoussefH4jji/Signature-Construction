@@ -70,9 +70,21 @@ a:hover{
 .navbar-nav .navbar-item .nav-link:hover {
   color: #F48B21;
 }
+#google_translate_element{
+  /* width: 10rem; */
+  /* border: 1px solid red; */
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+#google_translate_element span{
+  display: none;
+}
 
+.skiptranslate {
+  /* color: red; */
+  font-size: 0;
+}
 
-/* Update CSS to adjust styles based on Bootstrap classes */
 .home-container {
   background-image: url('../images/home\ 2.jpg');
   background-position: center;
