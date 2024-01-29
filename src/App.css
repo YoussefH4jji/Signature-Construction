@@ -504,6 +504,10 @@ footer{
   html{
     font-size: 55%;
   }
+  .scrollbar-track{
+    display: none;
+  }
+
 }
 @media (max-width :535px) {
  
