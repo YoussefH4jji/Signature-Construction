@@ -201,7 +201,7 @@ a:hover{
 }
 
 .smaller-img {
-  width: 20rem;
+  width: 25rem;
 }
 
 .about-desc {
@@ -212,6 +212,7 @@ a:hover{
   font-size: 1.6rem;
   text-align: center;
   font-family: 'Arimo', sans-serif;
+  font-weight: bold;
 }
 
 .about-desc p {
