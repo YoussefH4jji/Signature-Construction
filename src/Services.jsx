@@ -1,11 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 import './Services.css'
-import { MdConstruction } from "react-icons/md";
+import { BsBadge3D } from "react-icons/bs";
+import { IoKeyOutline } from "react-icons/io5";
+import { FaScrewdriverWrench } from "react-icons/fa6";
+import { FaPhoneVolume } from "react-icons/fa6";
 
 export default function Services(){
     return(
         <section className='services-section' id='services'>
-            <h1 className="title">Our <span className="orange">Services</span></h1>
+            <h1 className="title">Nos <span className="orange">services</span></h1>
             <div className="row">
                 {/* <div className="col-sm-3"> */}
                     <div className="e-card playing col-sm-6 col-md-3 ">
@@ -14,7 +17,7 @@ export default function Services(){
                         <div className="wave"></div>
                         <div className="wave"></div>
                         <div className="services-container">
-                            <MdConstruction className='icon'/>
+                            <BsBadge3D className='icon'/>
                             <h3 className='services-title'>Conception 2D ET 3D</h3>
                             <p>
                             Signature Construction vous offre une approche complète pour visualiser et planifier votre projet.
@@ -36,7 +39,7 @@ export default function Services(){
                         <div className="wave"></div>
                         <div className="wave"></div>
                         <div className="services-container">
-                            <MdConstruction className='icon'/>
+                            <IoKeyOutline className='icon'/>
                             <h3 className='services-title'>Projets clé en main</h3>
                             <p>
                             Signature Construction vous offre une solution tout-en-un pour la réalisation de vos projets de construction et d'aménagement. 
@@ -55,7 +58,7 @@ export default function Services(){
                         <div className="wave"></div>
                         <div className="wave"></div>
                         <div className="services-container">
-                            <MdConstruction className='icon'/>
+                            <FaScrewdriverWrench className='icon'/>
                             <h3 className='services-title'>Travaux sur mesure</h3>
                             <p>
                             Notre expertise en travaux sur mesure est la pour répondre à des besoins spécifiques en offrant des solutions personnalisées dans la construction, 
@@ -78,7 +81,7 @@ export default function Services(){
                         <div className="wave"></div>
                         <div className="wave"></div>
                         <div className="services-container">
-                            <MdConstruction className='icon'/>
+                            <FaPhoneVolume className='icon'/>
                             <h3 className='services-title'>Suivi de chantiers et assistance technique:</h3>
                             <p>
                             Signature Construction assure une gestion experte du projet, 

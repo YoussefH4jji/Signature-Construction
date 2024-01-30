@@ -18,19 +18,16 @@ export default function Header(){
                             </li> */}
                             
                             <li className="navbar-item">
-                                <a href="#about" className="nav-link header-list">About Us</a>
+                                <a href="#about" className="nav-link header-list">À propos de nous</a>
                             </li>
                             <li className="navbar-item">
-                                <a href="#services" className="nav-link header-list">Services</a>
+                                <a href="#services" className="nav-link header-list">Nos Services</a>
                             </li>
                             <li className="navbar-item">
-                                <a href="#projects" className="nav-link header-list">Projects</a>
+                                <a href="#projects" className="nav-link header-list">Nos Projects</a>
                             </li>
                             <li className="navbar-item header-list">
-                                <a href="#contact" className="nav-link">Contact</a>
-                            </li>
-                            <li>
-                                <div id="google_translate_element"className="navbar-item header-list"></div>
+                                <a href="#contact" className="nav-link">Contactez-nous</a>
                             </li>
                         </ul>
                     </div>
