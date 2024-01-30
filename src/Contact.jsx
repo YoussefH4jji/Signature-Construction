@@ -66,7 +66,7 @@ export default function Contact() {
         </div>
         <div className="input-box">
             <div className="input-field">
-                <input type="number" placeholder="Numéro de téléphone " id='phone' min='0'  className="input number" />
+                <input type="number" placeholder="Numéro de téléphone " id='phone' min='0' className="input number" />
                 <span className="focus"></span>
             </div>
             <div className="input-field">
