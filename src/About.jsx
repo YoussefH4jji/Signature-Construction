@@ -6,12 +6,13 @@ export default function About(){
             <div className="container about-container">
                 
                 <div className="about-desc">
-                    <h3>Qui sommes-nous</h3>
                     <p>
-                    Bienvenue chez Signature Construction, votre partenaire de confiance pour tous vos besoins en construction, 
-                    aménagement intérieur et extérieur, projets clé en main et travaux divers. Nous proposons une gamme complète de services, 
-                    comprenant la construction, l'architecture d'intérieur, la peinture, la pose de parquets, de papiers peints, de carrelage mural et sol, 
-                    ainsi que des travaux en plâtre simple et décoratif et tout type de travaux divers sur chantiers.
+                    Bienvenue chez Signature Construction, votre partenaire de confiance pour tous vos
+                    besoins en construction, aménagement intérieur et extérieur, projets clé en main et travaux
+                    divers. Nous proposons une gamme complète de services, comprenant la construction,
+                    l'architecture d'intérieur, la peinture, la pose de parquets, de papiers peints, de carrelage mural
+                    et sol, ainsi que des travaux en plâtre simple et décoratif et tout type de travaux divers sur
+                    chantiers.
 
                     </p>
                     <button className="btn button services">Explorer nos services</button>

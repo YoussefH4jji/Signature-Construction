@@ -1,6 +1,6 @@
-import { FaInstagram } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-// import { CiPhone } from "react-icons/ci";
+// import { FaInstagram } from "react-icons/fa";
+// import { FaFacebook } from "react-icons/fa";
+import { CiPhone } from "react-icons/ci";
 import { MdEmail } from "react-icons/md";
 
 export default function Footer(){
@@ -8,7 +8,7 @@ export default function Footer(){
         <section className="footer-section">
             <div className="footer-container">
                 <div className="company-logo">
-                    <img src="../images/white transparent.png" alt="Company'slogo" />
+                    <img src="../images/white transparent.png" alt="Company'slogo" className="footerImg"/>
                 </div>
                 <div className="links-container">
                     <h3>Revenir à:</h3>
@@ -19,7 +19,7 @@ export default function Footer(){
                 </div>
                 <div className="contact-container">
                     <h3>Contactez-nous via :</h3>
-                    <div className="contact-links">
+                    {/* <div className="contact-links">
                         <FaInstagram className="contact-icon"/>
                         <a href="https://www.instagram.com/signature__construction/">signature__construction</a>
 
@@ -28,7 +28,7 @@ export default function Footer(){
                         <FaFacebook className="contact-icon"/>
                         <a href="">Signature Company</a>
 
-                    </div>
+                    </div> */}
                     {/* <div className="contact-links">
                        <CiPhone className="contact-icon"/>
                         <a href="">0662213065</a>
@@ -36,7 +36,11 @@ export default function Footer(){
                     </div> */}
                     <div className="contact-links">
                         <MdEmail className="contact-icon"/>
-                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">signature.company@gmail.com</a>
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">signature.c.info@gmail.com</a>
+                    </div>
+                    <div className="contact-links">
+                        <CiPhone className="contact-icon"/>
+                        <a href="">+212 62 21 30 65</a>
                     </div>
                 </div>
                 <div className="location-container">

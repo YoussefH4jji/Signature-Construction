@@ -4,7 +4,7 @@ export default function Contact() {
     useEffect(() => {
         const formData = document.querySelector('form');
         const fullName = document.querySelector('#name')
-        const emai = document.querySelector('#email')
+        const email = document.querySelector('#email')
         const phone = document.querySelector('#phone')
         const subject = document.querySelector('#subject')
         const msg = document.querySelector('#message')
@@ -12,7 +12,7 @@ export default function Contact() {
             const bodyMessage = `
             Full Name : ${fullName.value} 
             <br>
-            Email : ${emai.value}
+            Email : ${email.value}
             <br>
             Phone :${phone.value}
             <br>

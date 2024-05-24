@@ -22,11 +22,18 @@ header{
   background-color: white;
   width: 100%;  
   z-index: 1;
+  /* height: 2rem; */
+  height: fit-content;
+
 }
 
 header img{
   width: 10rem;
+  /* position: absolute; */
+  /* z-index: 1; */
   margin-left: 2rem;
+  /* border: 1px solid red; */
+  margin-top: -2rem;
 }
 header li {
   list-style: none;
@@ -62,7 +69,6 @@ a:hover{
   font-size: 1.5rem;
 }
 /* style.css */
-
 .navbar-nav .navbar-item .nav-link {
   color:  black;
 }
@@ -90,13 +96,14 @@ a:hover{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 30rem;
+  height: 25rem;
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 11rem;
+  margin-top: 9rem;
 }
 
 .home-container::before {
@@ -131,6 +138,7 @@ a:hover{
   font-size: 2.2rem;
   letter-spacing: .5rem;
   font-family: 'Arimo', sans-serif;
+  font-weight: 600;
 }
 
 .home-container span {
@@ -202,17 +210,13 @@ a:hover{
 
 .smaller-img {
   width: 20rem;
+  margin-left: 2rem;
+  margin-top: -3rem;
+
 }
 
 .about-desc {
   flex: 1;
-}
-
-.about-desc h3 {
-  font-size: 1.6rem;
-  text-align: center;
-  font-family: 'Arimo', sans-serif;
-  font-weight: bold;
 }
 
 .about-desc p {
@@ -220,6 +224,8 @@ a:hover{
   letter-spacing: .1rem;
   line-height: 1.7rem;
   font-family: 'Arimo', sans-serif;
+  text-align: justify;
+  font-weight: 600;
 }
 
 .orange{

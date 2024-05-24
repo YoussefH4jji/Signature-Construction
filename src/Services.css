@@ -12,7 +12,6 @@
   margin-top: -70%;
   background: linear-gradient(744deg,#F48B21,#F5B06A 60%,black);
 }
-
 .wave:nth-child(2),
 .wave:nth-child(3) {
   top: 210px;
@@ -20,29 +19,30 @@
 
 .playing .wave {
   border-radius: 40%;
-  animation: wave 3000ms infinite linear;
+  animation: wave 10s infinite linear;
 }
 
 .wave {
   border-radius: 40%;
-  animation: wave 55s infinite linear;
+  animation: wave 1s infinite linear;
 }
 
 .playing .wave:nth-child(2) {
-  animation-duration: 4000ms;
+  animation-duration: 30s;
 }
 
 .wave:nth-child(2) {
-  animation-duration: 50s;
+  animation-duration: 30s;
 }
 
 .playing .wave:nth-child(3) {
-  animation-duration: 000ms;
+  animation-duration: 7s;
 }
 
 .wave:nth-child(3) {
-  animation-duration: 45s;
+  animation-duration: 15s;
 }
+
 
 @keyframes wave {
   0% {
@@ -90,6 +90,11 @@
 }
 .icon{
   font-size: 1.5rem;
+}
+.services-container p{
+  font-weight: 600;
+  text-align: justify;
+  font-size: 1.1rem;
 }
 @media (max-width: 767px) {
   .e-card {
