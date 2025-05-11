@@ -1,8 +1,39 @@
-# React + Vite
+# Signature Construction Website
+This is the official website for **Signature Construction**, a company specializing in high-quality construction and renovation services. The site showcases the company’s services, projects, contact information, and more with a clean, responsive design.
+🔗 [Visit the live site](https://signature-construction.vercel.app/)
+## Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Modern responsive design
+- Service and project sections
+- Contact form integration
+- SEO-friendly pages
+- Built with Next.js and React
 
-Currently, two official plugins are available:
+## Technologies Used
+- [HTML/CSS]
+- [JavaScript]
+- [React]
+- [bootstrap) (if applicable)
+- [Vercel] for deployment
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
+
+### Prerequisites
+
+Make sure you have **Node.js** and **npm** installed:
+
+```bash
+node -v
+npm -v
+```
+If not, install node from https://nodejs.org/.
+
+Installation
+1. Clone the repository:
+   git clone https://github.com/YoussefH4jji/Signature-Construction.git
+   cd signature-construction
+2.Install dependencies:
+  npm install
+3.Run the development server:
+  npm run dev
+
