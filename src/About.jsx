@@ -7,12 +7,9 @@ export default function About(){
                 
                 <div className="about-desc">
                     <p>
-                    Bienvenue chez Signature Construction, votre partenaire de confiance pour tous vos
-                    besoins en construction, aménagement intérieur et extérieur, projets clé en main et travaux
-                    divers. Nous proposons une gamme complète de services, comprenant la construction,
-                    l'architecture d'intérieur, la peinture, la pose de parquets, de papiers peints, de carrelage mural
-                    et sol, ainsi que des travaux en plâtre simple et décoratif et tout type de travaux divers sur
-                    chantiers.
+                    Chez Signature Construction, nous croyons que chaque espace a le pouvoir d’inspirer.
+                    Notre mission est simple : prendre en charge chaque étape de votre projet d’aménagement intérieur — du premier croquis à la touche finale — pour que vous puissiez vous concentrer sur l’essentiel.
+                    Qu’il s’agisse d’un bureau à la pointe de la technologie, d’un café accueillant ou d’une villa haut de gamme, nous livrons des solutions clés en main avec précision, style et efficacité.
 
                     </p>
                     <button className="btn button services">Explorer nos services</button>
