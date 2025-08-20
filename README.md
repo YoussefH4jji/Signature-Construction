@@ -13,7 +13,7 @@ This is the official website for **Signature Construction**, a company specializ
 - [HTML/CSS]
 - [JavaScript]
 - [React]
-- [bootstrap) (if applicable)
+- [bootstrap)
 - [Vercel] for deployment
 
 ## Getting Started
