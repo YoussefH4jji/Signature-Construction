@@ -10,18 +10,20 @@ import Services from './Services'
 import Projects from './Projects'
 import Contact from './Contact'
 import Footer from './Footer'
+import UnderCs from './UnderCs'
 import './App.css'
 
 function App() {
   return (
     <>
-      <Header/>
+      {/* <Header/>
       <HomeSection/>
       <About/>
       <Services/>
       <Projects/>
       <Contact/>
-      <Footer/>
+      <Footer/> */}
+      <UnderCs/>
     </>
       
   )
