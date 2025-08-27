@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 11, "column": 0}, "map": {"version":3,"sources":["file:///Users/mac/Documents/Projects/hydroforce/signature-construction/src/app/home/About.tsx"],"sourcesContent":["import React from 'react'\nimport \"./About.css\";\n\nconst About = () => {\n  return (\n    <div>About</div>\n  )\n}\n\nexport default About"],"names":[],"mappings":";;;;;;;AAGA,MAAM,QAAQ;IACZ,qBACE,8OAAC;kBAAI;;;;;;AAET;uCAEe","debugId":null}},
+    {"offset": {"line": 32, "column": 0}, "map": {"version":3,"sources":["file:///Users/mac/Documents/Projects/hydroforce/signature-construction/src/app/home/page.tsx"],"sourcesContent":["import React from 'react'\nimport About from './About'\n\nconst page = () => {\n  return (\n   <div>\n    <About/>\n   </div>\n  )\n}\n\nexport default page"],"names":[],"mappings":";;;;;AACA;;;AAEA,MAAM,OAAO;IACX,qBACC,8OAAC;kBACA,cAAA,8OAAC,uIAAK;;;;;;;;;;AAGV;uCAEe","debugId":null}}]
+}

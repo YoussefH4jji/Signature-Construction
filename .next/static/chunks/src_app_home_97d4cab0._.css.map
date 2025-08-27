@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/mac/Documents/Projects/hydroforce/signature-construction/src/app/home/About.css"],"sourcesContent":[""],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/mac/Documents/Projects/hydroforce/signature-construction/src/app/home/Header.css"],"sourcesContent":[".header-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding: 10px 20px;\n  }\n  \n  .header-logo {\n    max-height: 50px;\n  }\n  \n  /* Menu par défaut (desktop) */\n  .menu {\n    display: flex;\n    list-style: none;\n    gap: 20px;\n  }\n  \n  /* Masquer le menu sur mobile */\n  .menu-toggle {\n    display: none;\n    font-size: 24px;\n    background: none;\n    border: none;\n    cursor: pointer;\n  }\n  \n  /* Responsive mobile */\n  @media (max-width: 768px) {\n    .menu {\n      display: none;\n      flex-direction: column;\n      gap: 10px;\n      position: absolute;\n      top: 60px;\n      right: 20px;\n      background: white;\n      padding: 10px;\n      border: 1px solid #ddd;\n      box-shadow: 0 2px 8px rgba(0,0,0,0.2);\n    }\n  \n    .menu.show {\n      display: flex;\n    }\n  \n    .menu-toggle {\n      display: block;\n    }\n  }\n  "],"names":[],"mappings":"AAAA;;;;;;;AAOE;;;;AAKA;;;;;;AAOA;;;;;;;;AASA;EACE;;;;;;;;;;;;;EAaA;;;;EAIA","debugId":null}}]
+}

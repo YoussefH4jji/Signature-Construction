@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 11, "column": 0}, "map": {"version":3,"sources":["file:///Users/mac/Documents/Projects/hydroforce/signature-construction/src/app/home/page.tsx"],"sourcesContent":["import React from 'react'\n\nconst page = () => {\n  return (\n   <div>\n    Main\n   </div>\n  )\n}\n\nexport default page"],"names":[],"mappings":";;;;;;AAEA,MAAM,OAAO;IACX,qBACC,8OAAC;kBAAI;;;;;;AAIR;uCAEe","debugId":null}}]
+}

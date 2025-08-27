@@ -1,0 +1,15 @@
+/* [project]/src/app/home/Projects.css [app-client] (css) */
+.projects-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+}
+
+.projects-container h2 {
+  margin-bottom: -10rem;
+}
+
+/*# sourceMappingURL=src_app_home_Projects_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,648 @@
+/* [project]/src/app/home/About.css [app-client] (css) */
+.about-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.about-container h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.orange {
+  color: orange;
+  background: none;
+  font-weight: bold;
+}
+
+.about-content {
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+}
+
+.about-content p {
+  width: 60%;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+@media (max-width: 820px) {
+  .about-content p {
+    font-size: 1rem;
+  }
+
+  .about-content img {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 511px) {
+  .about-content p {
+    font-size: .9rem;
+  }
+
+  .about-content img {
+    width: 8rem;
+  }
+
+  .about-container h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 393px) {
+  .about-content p {
+    font-size: .7rem;
+  }
+
+  .about-content img {
+    width: 7rem;
+  }
+}
+
+@media (max-width: 317px) {
+  .about-content p {
+    font-size: .6rem;
+  }
+
+  .about-content img {
+    width: 6rem;
+  }
+}
+
+/* [project]/src/app/home/Home.css [app-client] (css) */
+body {
+  color: #fff;
+  background: #161616;
+}
+
+/* [project]/src/app/home/Projects.css [app-client] (css) */
+.projects-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+}
+
+.projects-container h2 {
+  margin-bottom: -10rem;
+}
+
+/* [project]/src/app/components/CoverFlow.css [app-client] (css) */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #1a1a1a;
+  --min-size: 200px;
+}
+
+.drag-proxy {
+  visibility: hidden;
+  position: absolute;
+}
+
+.controls {
+  top: calc(50% + clamp(var(--min-size), 20vmin, 20vmin));
+  min-width: var(--min-size);
+  z-index: 300;
+  justify-content: space-between;
+  width: 20vmin;
+  height: 44px;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%)scale(1.5);
+}
+
+.scroll-icon {
+  color: #e6e6e6;
+  height: 1px;
+  animation: 4s infinite action;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+
+.boxes {
+  width: 100%;
+  height: 40rem;
+  transform-style: preserve-3d;
+  perspective: 800px;
+  touch-action: none;
+  margin-top: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  overflow: hidden;
+}
+
+.box {
+  transform-style: preserve-3d;
+  width: 20vmin;
+  height: 10vmin;
+  min-height: var(--min-size);
+  min-width: var(--min-size);
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.box:after {
+  content: "";
+  background-image: var(--src);
+  opacity: .75;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)rotate(180deg)translate(0, -100%)translate(0, -.5vmin);
+}
+
+.box:before {
+  content: "";
+  background: linear-gradient(var(--bg) 50%, transparent);
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)rotate(180deg)translate(0, -100%)translate(0, -.5vmin)scale(1.01);
+}
+
+.box img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.box:nth-of-type(odd) {
+  background: #b3f075;
+}
+
+.box:nth-of-type(2n) {
+  background: #66b814;
+}
+
+@supports (-webkit-box-reflect: below) {
+  .box {
+    -webkit-box-reflect: below .5vmin linear-gradient(transparent 0 50%, #fff 100%);
+  }
+
+  .box:after, .box:before {
+    display: none;
+  }
+}
+
+@keyframes action {
+  0%, 25%, 50%, 100% {
+    transform: translate(0);
+  }
+
+  12.5%, 37.5% {
+    transform: translate(0, 25%);
+  }
+}
+
+/* [project]/src/app/home/Services.css [app-client] (css) */
+.services-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.first-service {
+  color: #fff;
+  border: 1px solid #ff0;
+  margin-top: 0;
+  background-color: #363333 !important;
+}
+
+.first-service .services-content-container, .first-service .services-content {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.first-service h2, .first-service p {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.second-service {
+  color: #fff;
+  background-color: #272121 !important;
+}
+
+.second-service .services-content-container, .second-service .services-content {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.second-service h2, .second-service p {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.third-service .services-content-container, .third-service .services-content {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.third-service {
+  color: #fff;
+  background-color: #e16428 !important;
+}
+
+.third-service .services-content-container, .third-service .services-content {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.third-service h2, .third-service p {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.fourth-service {
+  color: #fff;
+  background-color: #f6e9e9 !important;
+}
+
+.fourth-service .services-content-container, .fourth-service .services-content {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.fourth-service h2, .fourth-service p {
+  color: #272121;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.first-service h2, .second-service h2, .third-service h2, .fourth-service h2 {
+  font-size: 2.3rem;
+  font-weight: bolder;
+}
+
+.first-service p, .second-service p, .third-service p, .fourth-service p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.services-content-container {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+.services-content {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  display: flex;
+}
+
+.services-img {
+  border-radius: 5rem 7rem 4rem 2rem;
+  width: 15rem;
+}
+
+.second-service, .second-service h2, .second-service p {
+  background-color: #272121;
+}
+
+.black {
+  color: #272121;
+  background: none;
+  font-weight: bold;
+}
+
+.services-main-title {
+  z-index: 2;
+  margin-top: 1rem;
+  margin-bottom: -2rem;
+}
+
+@media (max-width: 1000px) {
+  .first-service h2, .second-service h2, .third-service h2, .fourth-service h2 {
+    text-align: center;
+    width: 20rem;
+    font-size: 2rem;
+  }
+
+  .first-service p, .second-service p, .third-service p, .fourth-service p {
+    font-size: 1.1rem;
+  }
+
+  .services-img {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 692px) {
+  .first-service h2, .second-service h2, .third-service h2, .fourth-service h2 {
+    width: 15rem;
+    font-size: 1.5rem;
+  }
+
+  .first-service p, .second-service p, .third-service p, .fourth-service p {
+    font-size: .9rem;
+  }
+
+  .services-img {
+    width: 9rem;
+  }
+}
+
+@media (max-width: 630px) {
+  .services-img {
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .first-service h2, .second-service h2, .third-service h2, .fourth-service h2 {
+    font-size: 1.2rem;
+  }
+
+  .first-service p, .second-service p, .third-service p, .fourth-service p {
+    font-size: .7rem;
+  }
+
+  .services-img {
+    width: 9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  first-service h2, .second-service h2, .third-service h2, .fourth-service h2 {
+    font-size: 1.3rem;
+  }
+
+  .first-service p, .second-service p, .third-service p, .fourth-service p {
+    width: 22rem;
+    font-size: 1rem;
+  }
+
+  .services-img {
+    display: none;
+  }
+}
+
+@media (max-width: 530px) {
+  first-service h2, .second-service h2, .third-service h2, .fourth-service h2 {
+    font-size: 1.4rem;
+  }
+
+  .first-service p, .second-service p, .third-service p, .fourth-service p {
+    width: 20rem;
+    font-size: .9rem;
+  }
+
+  .services-img {
+    display: none;
+  }
+}
+
+@media (max-width: 503px) {
+  first-service h2, .second-service h2, .third-service h2, .fourth-service h2 {
+    font-size: 1.4rem;
+  }
+
+  .services-img {
+    display: none;
+  }
+
+  .first-service h2, .second-service h2, .third-service h2, .fourth-service h2 {
+    font-size: 1.1rem;
+  }
+
+  .first-service p, .second-service p, .third-service p, .fourth-service p {
+    width: 13rem;
+    font-size: .8rem;
+  }
+
+  .services-title {
+    border: 2px solid red;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  first-service h2, .second-service h2, .third-service h2, .fourth-service h2 {
+    font-size: 1.2rem;
+  }
+
+  .first-service p, .second-service p, .third-service p, .fourth-service p {
+    width: 11rem;
+    height: 12rem;
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 379px) {
+  .first-service h2, .second-service h2, .third-service h2, .fourth-service h2 {
+    font-size: 1rem;
+  }
+
+  .first-service p, .second-service p, .third-service p, .fourth-service p {
+    width: 10rem;
+    height: 12rem;
+    font-size: .8rem;
+  }
+}
+
+/* [project]/src/app/components/ScrollStack.css [app-client] (css) */
+.scroll-stack-scroller {
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  will-change: scroll-position;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  overflow-x: visible;
+  overflow-y: scroll;
+  transform: translateZ(0);
+}
+
+.scroll-stack-scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-stack-inner {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  padding: 20vh 5rem;
+}
+
+.scroll-stack-card-wrapper {
+  position: relative;
+}
+
+.scroll-stack-card {
+  transform-origin: top;
+  will-change: transform, filter;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  width: 100%;
+  height: 20rem;
+  margin: 30px 0;
+  padding: 3rem;
+  position: relative;
+  transform: translateZ(0);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+}
+
+.scroll-stack-end {
+  width: 100%;
+  height: 1px;
+}
+
+.card-purple {
+  background-color: #363333;
+}
+
+.card-pink, .card-blue {
+  background-color: #272121;
+}
+
+@media (max-width: 350px) {
+  .scroll-stack-card {
+    width: 204px;
+  }
+}
+
+@media (max-width: 415px) {
+  .scroll-stack-scroller {
+    border: 1px solid red;
+    margin-top: -3rem;
+  }
+}
+
+/* [project]/src/app/components/ContactForm.css [app-client] (css) */
+.btn2 {
+  background: #000;
+}
+
+.form-container h2 {
+  text-align: center;
+}
+
+.form-container form {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.form-container input {
+  color: orange;
+  background-color: #313131;
+  border: 1px solid orange;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  padding: .5rem;
+}
+
+.form-container input:hover {
+  border: 1.1px solid #b07405;
+}
+
+.input-container:first-child {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  display: flex;
+}
+
+.form-container textarea {
+  color: orange;
+  background-color: #313131;
+  border: 1px solid orange;
+  border-radius: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: .5rem;
+}
+
+.first-inp {
+  margin-right: 5rem;
+}
+
+.contact-section {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+  display: flex;
+}
+
+.contact-section img {
+  margin-left: 2rem;
+}
+
+.form-content h3 {
+  text-align: center;
+}
+
+@media (max-width: 854px) {
+  .contact-section img {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 772px) {
+  .contact-section img, .form-container input {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 619px) {
+  .contact-section img, .form-container input {
+    width: 7rem;
+  }
+}
+
+@media (max-width: 459px) {
+  .contact-section img, .form-container input {
+    width: 7rem;
+  }
+
+  .contact-section img {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=src_app_404bad1e._.css.map*/

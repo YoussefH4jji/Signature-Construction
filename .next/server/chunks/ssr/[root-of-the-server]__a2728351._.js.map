@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 11, "column": 0}, "map": {"version":3,"sources":["file:///Users/mac/Documents/Projects/hydroforce/signature-construction/src/app/page.tsx"],"sourcesContent":["import Image from \"next/image\";\n\nexport default function Home() {\n  return (\n    <div className='home-container'>\n       <div className=\"home-content\">\n        <h1 className='home-page-title'>From Vision to Reality — Turnkey Interiors for Every Space</h1>\n        <h3>We Design, Build, and Deliver complete interiors. One partner. One contract. Seamless results.</h3>\n       </div>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;;AAEe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;kBACZ,cAAA,8OAAC;YAAI,WAAU;;8BACd,8OAAC;oBAAG,WAAU;8BAAkB;;;;;;8BAChC,8OAAC;8BAAG;;;;;;;;;;;;;;;;;AAIZ","debugId":null}}]
+}

@@ -1,0 +1,190 @@
+/* [project]/src/app/CardSwap.css [app-client] (css) */
+:root {
+  --bg: #1a1a1a;
+  --min-size: 200px;
+}
+
+.drag-proxy {
+  visibility: hidden;
+  position: absolute;
+}
+
+.controls {
+  top: calc(50% + clamp(var(--min-size), 20vmin, 20vmin));
+  min-width: var(--min-size);
+  z-index: 300;
+  justify-content: space-between;
+  width: 20vmin;
+  height: 44px;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%)scale(1.5);
+}
+
+button {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 48px;
+  height: 48px;
+  transform: translate(0, var(--y, 0));
+  background: none;
+  border: 0;
+  border-radius: 50%;
+  outline: rgba(0, 0, 0, 0);
+  transition: transform .1s;
+  position: absolute;
+  top: 0%;
+}
+
+button:before {
+  content: "";
+  box-sizing: border-box;
+  background: #000 linear-gradient(rgba(204, 204, 204, .65), #000);
+  border: 2px solid #e6e6e6;
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button:active:before {
+  background: #000 linear-gradient(#000, rgba(204, 204, 204, .65));
+}
+
+button:first-of-type {
+  right: 100%;
+}
+
+button:nth-of-type(2) {
+  left: 100%;
+}
+
+button span {
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+button:hover {
+  --y: -5%;
+}
+
+button svg {
+  fill: #e6e6e6;
+  height: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)rotate(0)translate(2%);
+}
+
+button:first-of-type svg {
+  transform: translate(-50%, -50%)rotate(180deg)translate(2%);
+}
+
+.scroll-icon {
+  color: #e6e6e6;
+  height: 30px;
+  animation: 4s infinite action;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+
+@keyframes action {
+  0%, 25%, 50%, 100% {
+    transform: translate(0);
+  }
+
+  12.5%, 37.5% {
+    transform: translate(0, 25%);
+  }
+}
+
+.boxes {
+  width: 100%;
+  height: 100vh;
+  transform-style: preserve-3d;
+  perspective: 800px;
+  touch-action: none;
+  position: absolute;
+  overflow: hidden;
+}
+
+.box {
+  transform-style: preserve-3d;
+  width: 20vmin;
+  height: 20vmin;
+  min-height: var(--min-size);
+  min-width: var(--min-size);
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.box:after {
+  content: "";
+  background-image: var(--src);
+  opacity: .75;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)rotate(180deg)translate(0, -100%)translate(0, -.5vmin);
+}
+
+.box:before {
+  content: "";
+  background: linear-gradient(var(--bg) 50%, transparent);
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)rotate(180deg)translate(0, -100%)translate(0, -.5vmin)scale(1.01);
+}
+
+.box img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.box:nth-of-type(odd) {
+  background: #b3f075;
+}
+
+.box:nth-of-type(2n) {
+  background: #66b814;
+}
+
+@supports (-webkit-box-reflect: below) {
+  .box {
+    -webkit-box-reflect: below .5vmin linear-gradient(transparent 0 50%, white 100%);
+  }
+
+  .box:after, .box:before {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=src_app_CardSwap_css_bad6b30c._.single.css.map*/

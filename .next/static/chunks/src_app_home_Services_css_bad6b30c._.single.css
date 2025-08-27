@@ -1,0 +1,248 @@
+/* [project]/src/app/home/Services.css [app-client] (css) */
+.services-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.first-service {
+  color: #fff;
+  border: 1px solid #ff0;
+  margin-top: 0;
+  background-color: #363333 !important;
+}
+
+.first-service .services-content-container, .first-service .services-content {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.first-service h2, .first-service p {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.second-service {
+  color: #fff;
+  background-color: #272121 !important;
+}
+
+.second-service .services-content-container, .second-service .services-content {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.second-service h2, .second-service p {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.third-service .services-content-container, .third-service .services-content {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.third-service {
+  color: #fff;
+  background-color: #e16428 !important;
+}
+
+.third-service .services-content-container, .third-service .services-content {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.third-service h2, .third-service p {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.fourth-service {
+  color: #fff;
+  background-color: #f6e9e9 !important;
+}
+
+.fourth-service .services-content-container, .fourth-service .services-content {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.fourth-service h2, .fourth-service p {
+  color: #272121;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.first-service h2, .second-service h2, .third-service h2, .fourth-service h2 {
+  font-size: 2.3rem;
+  font-weight: bolder;
+}
+
+.first-service p, .second-service p, .third-service p, .fourth-service p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.services-content-container {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+.services-content {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  display: flex;
+}
+
+.services-img {
+  border-radius: 5rem 7rem 4rem 2rem;
+  width: 15rem;
+}
+
+.second-service, .second-service h2, .second-service p {
+  background-color: #272121;
+}
+
+.black {
+  color: #272121;
+  background: none;
+  font-weight: bold;
+}
+
+.services-main-title {
+  z-index: 2;
+  margin-top: 1rem;
+  margin-bottom: -2rem;
+}
+
+@media (max-width: 1000px) {
+  .first-service h2, .second-service h2, .third-service h2, .fourth-service h2 {
+    text-align: center;
+    width: 20rem;
+    font-size: 2rem;
+  }
+
+  .first-service p, .second-service p, .third-service p, .fourth-service p {
+    font-size: 1.1rem;
+  }
+
+  .services-img {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 692px) {
+  .first-service h2, .second-service h2, .third-service h2, .fourth-service h2 {
+    width: 15rem;
+    font-size: 1.5rem;
+  }
+
+  .first-service p, .second-service p, .third-service p, .fourth-service p {
+    font-size: .9rem;
+  }
+
+  .services-img {
+    width: 9rem;
+  }
+}
+
+@media (max-width: 630px) {
+  .services-img {
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .first-service h2, .second-service h2, .third-service h2, .fourth-service h2 {
+    font-size: 1.2rem;
+  }
+
+  .first-service p, .second-service p, .third-service p, .fourth-service p {
+    font-size: .7rem;
+  }
+
+  .services-img {
+    width: 9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  first-service h2, .second-service h2, .third-service h2, .fourth-service h2 {
+    font-size: 1.3rem;
+  }
+
+  .first-service p, .second-service p, .third-service p, .fourth-service p {
+    width: 22rem;
+    font-size: 1rem;
+  }
+
+  .services-img {
+    display: none;
+  }
+}
+
+@media (max-width: 530px) {
+  first-service h2, .second-service h2, .third-service h2, .fourth-service h2 {
+    font-size: 1.4rem;
+  }
+
+  .first-service p, .second-service p, .third-service p, .fourth-service p {
+    width: 20rem;
+    font-size: .9rem;
+  }
+
+  .services-img {
+    display: none;
+  }
+}
+
+@media (max-width: 503px) {
+  first-service h2, .second-service h2, .third-service h2, .fourth-service h2 {
+    font-size: 1.4rem;
+  }
+
+  .services-img {
+    display: none;
+  }
+
+  .first-service h2, .second-service h2, .third-service h2, .fourth-service h2 {
+    font-size: 1.1rem;
+  }
+
+  .first-service p, .second-service p, .third-service p, .fourth-service p {
+    width: 13rem;
+    font-size: .8rem;
+  }
+
+  .services-title {
+    border: 2px solid red;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  first-service h2, .second-service h2, .third-service h2, .fourth-service h2 {
+    font-size: 1.2rem;
+  }
+
+  .first-service p, .second-service p, .third-service p, .fourth-service p {
+    width: 11rem;
+    height: 12rem;
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 379px) {
+  .first-service h2, .second-service h2, .third-service h2, .fourth-service h2 {
+    font-size: 1rem;
+  }
+
+  .first-service p, .second-service p, .third-service p, .fourth-service p {
+    width: 10rem;
+    height: 12rem;
+    font-size: .8rem;
+  }
+}
+
+/*# sourceMappingURL=src_app_home_Services_css_bad6b30c._.single.css.map*/

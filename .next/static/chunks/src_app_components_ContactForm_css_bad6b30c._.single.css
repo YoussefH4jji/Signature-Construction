@@ -1,0 +1,101 @@
+/* [project]/src/app/components/ContactForm.css [app-client] (css) */
+.btn2 {
+  background: #000;
+}
+
+.form-container h2 {
+  text-align: center;
+}
+
+.form-container form {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.form-container input {
+  color: orange;
+  background-color: #313131;
+  border: 1px solid orange;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  padding: .5rem;
+}
+
+.form-container input:hover {
+  border: 1.1px solid #b07405;
+}
+
+.input-container:first-child {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  display: flex;
+}
+
+.form-container textarea {
+  color: orange;
+  background-color: #313131;
+  border: 1px solid orange;
+  border-radius: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: .5rem;
+}
+
+.first-inp {
+  margin-right: 5rem;
+}
+
+.contact-section {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+  display: flex;
+}
+
+.contact-section img {
+  margin-left: 2rem;
+}
+
+.form-content h3 {
+  text-align: center;
+}
+
+@media (max-width: 854px) {
+  .contact-section img {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 772px) {
+  .contact-section img, .form-container input {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 619px) {
+  .contact-section img, .form-container input {
+    width: 7rem;
+  }
+}
+
+@media (max-width: 459px) {
+  .contact-section img, .form-container input {
+    width: 7rem;
+  }
+
+  .contact-section img {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=src_app_components_ContactForm_css_bad6b30c._.single.css.map*/
